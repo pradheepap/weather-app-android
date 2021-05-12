@@ -12,7 +12,7 @@ import sg.express.weather.service.MainService;
 
 public class MainActivity extends AppCompatActivity {
 
-    String msg = "Android : ";
+    String msg = "Weather : ";
 
     /** Called when the activity is first created. */
     @Override
