@@ -22,4 +22,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(msg, "The onCreate() event");
     }
 
+
+    // broadcast a custom intent.
+    public void broadcastIntent(View view){
+        Intent intent = new Intent();
+        intent.setAction("sg.express.weather.intent.CUSTOM_INTENT");
+        sendBroadcast(intent);
+    }
+
 }

@@ -13,10 +13,16 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".receivers.GreeterBroadCastReceivers">
+            <intent-filter>
+                <action android:name="sg.express.weather.intent.CUSTOM_INTENT">
+                </action>
+            </intent-filter>
+        </receiver>
 
         <service android:name=".service.MainService" />
     </application>
